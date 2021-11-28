@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <title>form Pop</title>
+  </head>
+  <body onload="guruInfo()">
+    <div class="grid-container">
+
+      <div class="btnForm">
+        <div id="buttonDiv">
+          <button class="btn" id="openButton" onclick="openForm()">
+            ADD
+          </button>
+        </div>
+
+          <div id="displaySelect">
+            <label for="techMain">Choose Category</label><br />
+            <select name="techMain" id="techMain">
+              <option selected value="all">Show All</option>
+              <option value="HTML">HTML</option>
+              <option value="CSS">CSS</option>
+              <option value="JAVASCRIPT">JAVASCRIPT</option>
+            </select>
+          </div>
+
+    </div>
+
+      <div id="textFromGuru" class="displayInfo"></div>
+  
+      <div class="form-popup" id="myForm">
+        <div class="form-container">
+          <label for="guruText"><b>Enter Your Question</b></label>
+          <input type="text" id="guruText" name="guruText" /> <br />
+          <label for="tech">Category</label>
+          <select name="tech" id="tech">
+            <option disabled selected value>-- select an option --</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JAVASCRIPT">JAVASCRIPT</option>
+          </select>
+
+          <button type="submit" class="btn" id="buttonSave">Save</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="exercise_2.js"></script>
+  </body>
+</html>

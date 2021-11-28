@@ -1,0 +1,156 @@
+body {
+  min-height: 90vh;
+  background: #4b6cb7;
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+  background: linear-gradient(to right, #182848, #4b6cb7);
+  font-family: 'Roboto', sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 60%;
+  margin-top: 5em;
+}
+.btnForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#buttonDiv {
+  width: 100%;
+}
+.btn {
+  display: block;
+  padding: 0.3em 1.2em;
+  margin: auto;
+  margin-top: 1.5em;
+  background-color: #00811c;
+  border: 0.16em solid rgba(255, 255, 255, 0);
+  border-radius: 1em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  text-align: center;
+  transition: all 0.2s;
+}
+#buttonDiv .btn:hover {
+  border-color: rgba(255, 255, 255, 1);
+  background-color: #245c30;
+}
+
+#displaySelect {
+  display: block;
+  position: relative;
+  right: auto;
+  text-align: center;
+  width: 280px;
+  color: white;
+}
+.displayInfo {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.card {
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: auto;
+  color: #ffffff;
+  border-radius: 1em;
+  margin: 1em 0 0.5em 0;
+  font-weight: 400;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.topPart {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+.titleCardTop {
+  color: #04aa6d;
+}
+.categoryAndTime {
+  
+  font-size: 0.9em;
+  text-align: center;
+}
+
+#text {
+  text-align: center;
+  font-size: 1.5em;
+  
+}
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 10em;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Add styles to the form container */
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  width: 70%;
+  padding: 1.5em 0.9em 1.5em 0.9em;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 1em;
+}
+
+.form-container .btn {
+  width: 50%;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover {
+  border-color: rgb(4, 0, 223);
+  opacity: 1;
+}
+
+/* Add styles to make mobile responsive */
+@media screen and (max-width: 700px) {
+  .grid-container {
+    width: 100%;
+    margin-top: 3em;
+  }
+  .btnForm {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #buttonDiv {
+    margin-bottom: 1.5em;
+  }
+  .form-popup {
+    top: 5em;
+  }
+  .form-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .topPart {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.form-container {
+  width: 60%;
+  padding: 1.5em 0.9em 1.5em 0.9em;
+}
+.form-container .btn {
+  width: 100%;
+}
+}
